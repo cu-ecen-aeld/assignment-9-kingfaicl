@@ -23,9 +23,9 @@ set +e
 # If there's a configuration for the assignment number, use this to look for
 # additional tests
 if [ -f conf/assignment.txt ]; then
+    echo "Found conf/assignment.txt"
     # This is just one example of how you could find an associated assignment
     assignment=`cat conf/assignment.txt`
-    echo `ls ./assignment-autotest`
     if [ -f ./assignment-autotest/test/${assignment}/assignment-test.sh ]; then
         echo "Executing assignment test script"
         ./assignment-autotest/test/${assignment}/assignment-test.sh $test_dir
