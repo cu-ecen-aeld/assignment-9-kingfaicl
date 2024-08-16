@@ -23,7 +23,9 @@ set +e
 # If there's a configuration for the assignment number, use this to look for
 # additional tests
 if [ -f conf/assignment.txt ]; then
-    ls .
+    echo "CWD..."
+    pwd
+    ls -l .
     echo "Trying to list assignment-autotest..."
     ls assignment-autotest
     # This is just one example of how you could find an associated assignment
