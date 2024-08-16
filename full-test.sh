@@ -27,7 +27,7 @@ if [ -f conf/assignment.txt ]; then
     pwd
     ls -l .
     echo "Trying to list assignment-autotest..."
-    ls assignment-autotest
+    ls -l assignment-autotest
     # This is just one example of how you could find an associated assignment
     assignment=`cat conf/assignment.txt`
     if [ -f ./assignment-autotest/test/${assignment}/assignment-test.sh ]; then
