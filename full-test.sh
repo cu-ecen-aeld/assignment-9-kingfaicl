@@ -24,6 +24,7 @@ set +e
 # additional tests
 if [ -f conf/assignment.txt ]; then
     ls .
+    echo "Trying to list assignment-autotest..."
     ls assignment-autotest
     # This is just one example of how you could find an associated assignment
     assignment=`cat conf/assignment.txt`
